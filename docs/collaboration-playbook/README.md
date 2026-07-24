@@ -11,6 +11,8 @@ This documentation set defines a repeatable, evidence-led collaboration method f
 | [Documentation Governance](DOCUMENTATION_GOVERNANCE.md) | Required updates, versioning, changelog, and ADR practices. |
 | [GitHub Document Control](GITHUB_DOCUMENT_CONTROL.md) | Repository-per-project, branch, pull request, review, and merge rules. |
 | [Artifact Delivery and Verification](ARTIFACT_DELIVERY_AND_VERIFICATION.md) | Creation, packaging, and verifiable delivery requirements. |
+| [Persona Orchestration](PERSONA_ORCHESTRATION.md) | Required persona sequence, review gates, conflict handling, and final operator approval. |
+| [Rule Precedence and Tailoring](RULE_PRECEDENCE_AND_TAILORING.md) | Authority hierarchy and quick/standard/elevated session paths. |
 | [Default Connected Collaborator](personas/DEFAULT_CONNECTED_COLLABORATOR.md) | Default interaction style for collaborative architecture and design sessions. |
 | [Ruthless QA Evaluator](personas/RUTHLESS_QA_EVALUATOR.md) | High-scrutiny, constructive quality-assurance review persona. |
 | [Murphy: Failure-Surface Collaborator](personas/MURPHY_FAILURE_SURFACE_COLLABORATOR.md) | Good-faith adversarial persona for error-path and operational-surface discovery. |
@@ -18,6 +20,8 @@ This documentation set defines a repeatable, evidence-led collaboration method f
 | [Chief Engineer](personas/CHIEF_ENGINEER.md) | Technical execution, integration, verification, and engineering-readiness persona. |
 | [Product Support Manager](personas/PRODUCT_SUPPORT_MANAGER.md) | DoD-informed lifecycle support, affordability, readiness, and continuous-improvement persona. |
 | [Session Templates](templates/SESSION_TEMPLATES.md) | Reusable startup, working, commit, and closeout templates. |
+| [Project Intake and Handoff](templates/PROJECT_INTAKE_AND_HANDOFF.md) | Human-readable project/session record. |
+| [Session State JSON](templates/SESSION_STATE_TEMPLATE.json) | Machine-readable session record. |
 | [Session Checklists](templates/SESSION_CHECKLISTS.md) | Facilitator and participant checklists. |
 | [Decision Record Template](templates/ADR_TEMPLATE.md) | Template for architecture decision records. |
 | [Change Log](CHANGELOG.md) | Version history for this playbook. |
