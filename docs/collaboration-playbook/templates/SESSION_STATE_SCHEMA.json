@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Collaborative Rules Session State",
+  "type": "object",
+  "required": ["schema_version", "project", "session", "authority", "persona_path", "items", "handoff"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "project": {
+      "type": "object",
+      "required": ["name", "repository_url", "default_branch", "documentation_root"],
+      "properties": {
+        "name": { "type": "string" },
+        "repository_url": { "type": "string", "format": "uri" },
+        "default_branch": { "type": "string" },
+        "documentation_root": { "type": "string" },
+        "session_type": { "enum": ["quick", "standard", "elevated"] }
+      }
+    },
+    "session": {
+      "type": "object",
+      "required": ["id", "objective", "status"],
+      "properties": {
+        "id": { "type": "string" },
+        "objective": { "type": "string" },
+        "status": { "enum": ["active", "awaiting_approval", "closed"] },
+        "in_scope": { "type": "array", "items": { "type": "string" } },
+        "out_of_scope": { "type": "array", "items": { "type": "string" } },
+        "constraints": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "required": ["operator", "final_approval_authority"],
+      "properties": {
+        "operator": { "type": "string" },
+        "final_approval_authority": { "type": "string" },
+        "delegations": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "persona_path": {
+      "type": "object",
+      "required": ["default_brainstorming", "completeness_round"],
+      "properties": {
+        "default_brainstorming": { "type": "boolean" },
+        "completeness_round": { "type": "boolean" },
+        "deep_dive_topics": { "type": "array", "items": { "type": "string" } },
+        "chief_architect": { "enum": ["not_requested", "complete"] },
+        "product_support_manager": { "enum": ["not_requested", "complete"] },
+        "qa_evaluator": { "enum": ["not_requested", "complete"] },
+        "murphy": { "enum": ["not_requested", "complete"] },
+        "chief_engineer": { "enum": ["not_requested", "complete"] },
+        "tailoring_rationale": { "type": "string" }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "summary", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "enum": ["requirement", "assumption", "finding", "recommendation", "decision", "action", "risk", "capa", "evidence"] },
+          "summary": { "type": "string" },
+          "evidence_ids": { "type": "array", "items": { "type": "string" } },
+          "owner": { "type": "string" },
+          "status": { "type": "string" }
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "required": ["artifact_version", "final_operator_approval"],
+      "properties": {
+        "artifact_version": { "type": "string" },
+        "branch": { "type": "string" },
+        "pull_request_url": { "type": "string", "format": "uri" },
+        "open_questions": { "type": "array", "items": { "type": "string" } },
+        "evidence_gaps": { "type": "array", "items": { "type": "string" } },
+        "next_action": { "type": "string" },
+        "final_operator_approval": { "enum": ["pending", "approved", "not_approved"] }
+      }
+    }
+  }
+}
+
