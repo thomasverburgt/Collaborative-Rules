@@ -1,7 +1,7 @@
 # Package Manifest
 
 - Package: Collaborative Architecture and Design Playbook
-- Version: 0.8.0
+- Version: 0.9.0
 - Created: 2026-07-24
 - Package root: `collaboration-playbook/`
 - Purpose: Generic, version-controlled collaboration protocol for architecture and design sessions.
@@ -16,11 +16,16 @@
 - `EVIDENCE_AND_TRACEABILITY.md`
 - `DOCUMENTATION_GOVERNANCE.md`
 - `GITHUB_DOCUMENT_CONTROL.md`
+- `PERSONA_ORCHESTRATION.md`
+- `RULE_PRECEDENCE_AND_TAILORING.md`
 - `ARTIFACT_DELIVERY_AND_VERIFICATION.md`
 - `MANIFEST.md`
 - `templates/ADR_TEMPLATE.md`
 - `templates/SESSION_CHECKLISTS.md`
 - `templates/SESSION_TEMPLATES.md`
+- `templates/PROJECT_INTAKE_AND_HANDOFF.md`
+- `templates/SESSION_STATE_SCHEMA.json`
+- `templates/SESSION_STATE_TEMPLATE.json`
 - `personas/DEFAULT_CONNECTED_COLLABORATOR.md`
 - `personas/RUTHLESS_QA_EVALUATOR.md`
 - `personas/MURPHY_FAILURE_SURFACE_COLLABORATOR.md`
