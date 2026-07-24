@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "name": "<project name>",
+    "repository_url": "https://github.com/<owner>/<repository>",
+    "default_branch": "main",
+    "documentation_root": "docs/",
+    "session_type": "standard"
+  },
+  "session": {
+    "id": "SES-<identifier>",
+    "objective": "<objective>",
+    "status": "active",
+    "in_scope": [],
+    "out_of_scope": [],
+    "constraints": []
+  },
+  "authority": {
+    "operator": "<operator>",
+    "final_approval_authority": "<operator or authority>",
+    "delegations": []
+  },
+  "persona_path": {
+    "default_brainstorming": true,
+    "completeness_round": true,
+    "deep_dive_topics": [],
+    "chief_architect": "not_requested",
+    "product_support_manager": "not_requested",
+    "qa_evaluator": "not_requested",
+    "murphy": "not_requested",
+    "chief_engineer": "not_requested",
+    "tailoring_rationale": ""
+  },
+  "items": [],
+  "handoff": {
+    "artifact_version": "<version>",
+    "branch": "<branch>",
+    "pull_request_url": "https://github.com/<owner>/<repository>/pull/<number>",
+    "open_questions": [],
+    "evidence_gaps": [],
+    "next_action": "<next action>",
+    "final_operator_approval": "pending"
+  }
+}
+
