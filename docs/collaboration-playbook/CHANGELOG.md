@@ -2,6 +2,18 @@
 
 All notable changes to the Collaborative Architecture and Design Playbook are recorded here.
 
+## [0.9.0] - 2026-07-24
+
+### Added
+
+- Required staged persona orchestration: Default brainstorming, Chief Architect, Product Support Manager, Ruthless QA, Murphy, Chief Engineer, and final operator approval/commit.
+- Rule-precedence hierarchy and quick/standard/elevated tailoring model.
+- Human-readable project intake/session handoff template and machine-readable JSON session-state schema/template.
+
+### Changed
+
+- Declared all external claims and verification untrusted unless the operator explicitly approves their use as evidence.
+
 ## [0.8.0] - 2026-07-24
 
 ### Added
