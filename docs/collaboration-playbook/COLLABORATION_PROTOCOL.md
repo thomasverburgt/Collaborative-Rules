@@ -4,6 +4,8 @@
 
 This protocol governs a human-led, AI-assisted architecture and design session. It turns exploratory discussion into traceable documentation without treating informal conversation as implementation.
 
+The required persona sequence and approval gates are defined in [Persona Orchestration](PERSONA_ORCHESTRATION.md). Rule precedence and session tailoring are defined in [Rule Precedence and Tailoring](RULE_PRECEDENCE_AND_TAILORING.md).
+
 Principles:
 
 - **Human authority:** the human participant owns priorities, acceptance, risk tolerance, and final decisions.
